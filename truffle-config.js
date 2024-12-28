@@ -24,7 +24,8 @@
  * Create .env (which should be .gitignored) and declare your MNEMONIC
  * and Infura PROJECT_ID variables inside.
  * For example, your .env file will have the following structure:
- *
+ *git push origin main --force
+
  * MNEMONIC = <Your 12 phrase mnemonic>
  * PROJECT_ID = <Your Infura project id>
  *
