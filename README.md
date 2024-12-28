@@ -18,6 +18,17 @@ This project demonstrates how to write, deploy, and interact with a smart contra
 
 ## Smart Contract
 
+
+### Explanation:
+1. **Smart Contract**: The `SmartContract.sol` file allows the contract to accept Ether, check its balance, and let the owner withdraw Ether.
+2. **Environment Setup**: Install Web3.js and Truffle, and configure your environment.
+3. **Web3.js Configuration**: Set up Web3.js to interact with Ganache or a public testnet like Rinkeby.
+4. **Truffle Setup**: Configure Truffle to deploy your smart contract and interact with it.
+5. **Metamask Setup**: Guide on configuring Metamask with Ganache and a public testnet.
+6. **Interacting with the Contract**: Use Web3.js to interact with the contract and check balances or perform actions like withdrawals.
+
+Let me know if you need any additional details!
+
 ### Solidity Code (SmartContract.sol)
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -44,13 +55,3 @@ contract SmartContract {
         return address(this).balance;
     }
 }
-
-### Explanation:
-1. **Smart Contract**: The `SmartContract.sol` file allows the contract to accept Ether, check its balance, and let the owner withdraw Ether.
-2. **Environment Setup**: Install Web3.js and Truffle, and configure your environment.
-3. **Web3.js Configuration**: Set up Web3.js to interact with Ganache or a public testnet like Rinkeby.
-4. **Truffle Setup**: Configure Truffle to deploy your smart contract and interact with it.
-5. **Metamask Setup**: Guide on configuring Metamask with Ganache and a public testnet.
-6. **Interacting with the Contract**: Use Web3.js to interact with the contract and check balances or perform actions like withdrawals.
-
-Let me know if you need any additional details!

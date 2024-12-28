@@ -67,15 +67,15 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
-    development: {
-     host: "127.0.0.1",     // Localhost (default: none)
-     port: 7545,            // Standard Ethereum port (default: none)
-     network_id: "5777",    
-     from: "0x9aB9adE58408a5d1BE931771C524F3AB95EfBca2", // Use one of the accounts from Ganache
-     gas: 5000000    // Any network (default: none)
-    },
+    // development: {
+    //  host: "127.0.0.1",     // Localhost (default: none)
+    //  port: 7545,            // Standard Ethereum port (default: none)
+    //  network_id: "5777",    
+    //  from: "0x9aB9adE58408a5d1BE931771C524F3AB95EfBca2", // Use one of the accounts from Ganache
+    //  gas: 5000000    // Any network (default: none)
+    // },
     holesky: {
-      provider: () => new HDWalletProvider(mnemonic, holeskyRPC),
+      provider: () => new HDWalletProvider(mnemonic, "https://holesky.infura.io/v3/b40669b034204648bb77c2fb2c51f749"),
       network_id: 17000, // Holesky's network ID
       gas: 6000000, // or even higher if needed
       gasPrice: 20000000000, // 20 gwei, increase if needed
