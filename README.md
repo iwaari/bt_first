@@ -55,10 +55,10 @@ For this project, the Holeski Testnet was used as the public Ethereum testnet fo
 2. **Configure Holeski:**
    Add the Holeski Testnet to MetaMask:
 
-Network Name: Holeski Testnet
-RPC URL: Replace with your provider's Holeski RPC endpoint (e.g., Infura or Alchemy).
-Chain ID: 17000
-Currency Symbol: ETH
+1. Network Name: Holeski Testnet
+2. RPC URL: Replace with your provider's Holeski RPC endpoint (e.g., Infura or Alchemy).
+3. Chain ID: 17000
+4. Currency Symbol: ETH
 
 3. **Get Test Ether:**
    Use a Holeski faucet to get test Ether for deploying and interacting with the contract.
@@ -75,7 +75,7 @@ Currency Symbol: ETH
 2. Deploy the Contract:
    Deploy the contract to the Holeski Testnet by running:
    ```bash
-   truffle migrate --network holeski
+   truffle migrate --network holesky
     ```
 
 ## **Interacting with the Contract**
@@ -84,11 +84,11 @@ Use Web3.js to interact with the deployed smart contract.
 ## **MetaMask Configuration**
 Add the Holeski Testnet to MetaMask by providing the following details:
 
-Network Name: Holeski Testnet
-RPC URL: https://<your-holeski-rpc-url>
-Chain ID: 17000
-Currency Symbol: ETH
-Import your account from Truffle (if needed) to MetaMask by using the private key generated during contract deployment.
+1. Network Name: Holeski Testnet
+2. RPC URL: https://<your-holeski-rpc-url>
+3. Chain ID: 17000
+4. Currency Symbol: ETH
+5. Import your account from Truffle (if needed) to MetaMask by using the private key generated during contract deployment.
 
 
 ## License
