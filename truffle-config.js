@@ -47,7 +47,7 @@
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const mnemonic = "country property champion miss small hub volcano chronic aspect napkin mask cube";
-const holeskyRPC = "https://holesky.infura.io/v3/b40669b034204648bb77c2fb2c51f749";
+const holeskyRPC = "wss://holesky.infura.io/v3/b40669b034204648bb77c2fb2c51f749";
 
 module.exports = {
   /**
@@ -75,7 +75,10 @@ module.exports = {
     //  gas: 5000000    // Any network (default: none)
     // },
     holesky: {
-      provider: () => new HDWalletProvider("country property champion miss small hub volcano chronic aspect napkin mask cube", "https://holesky.infura.io/v3/b40669b034204648bb77c2fb2c51f749"),
+      provider: () => new HDWalletProvider(
+        "country property champion miss small hub volcano chronic aspect napkin mask cube", 
+        "https://holesky.infura.io/v3/b40669b034204648bb77c2fb2c51f749"
+      ),
       network_id: 17000, // Holesky's network ID
       gas: 5000000, // Adjust gas limit if needed
       gasPrice: 20000000000, // Gas price in wei (20 Gwei)

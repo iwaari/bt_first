@@ -1,10 +1,10 @@
 # Smart Contract with Web3.js, Truffle, and Ganache
+This project demonstrates how to write, deploy, and interact with a smart contract using the Web3.js library, Truffle framework, and Ganache or a public testnet like Holeski. The smart contract allows for the following functionality:
 
-This project demonstrates how to write, deploy, and interact with a smart contract using the Web3.js library, Truffle framework, and Ganache or a public testnet like Rinkeby. The smart contract allows for the following functionality:
-
-- The contract can receive Ether.
-- The owner of the contract can withdraw all Ether from the contract's balance.
-- The contract includes a function to check its balance.
+The contract can receive Ether.
+The owner of the contract can withdraw all Ether from the contract's balance.
+The contract includes a function to check its balance.
+For this project, the Holeski Testnet was used as the public Ethereum testnet for deployment and interaction.
 
 ## Table of Contents
 1. [Smart Contract](#smart-contract)
@@ -16,42 +16,47 @@ This project demonstrates how to write, deploy, and interact with a smart contra
 7. [Metamask Setup](#metamask-setup)
 8. [License](#license)
 
-## Smart Contract
-
+## **Smart Contract**
 
 ### Explanation:
-1. **Smart Contract**: The `SmartContract.sol` file allows the contract to accept Ether, check its balance, and let the owner withdraw Ether.
-2. **Environment Setup**: Install Web3.js and Truffle, and configure your environment.
-3. **Web3.js Configuration**: Set up Web3.js to interact with Ganache or a public testnet like Rinkeby.
-4. **Truffle Setup**: Configure Truffle to deploy your smart contract and interact with it.
-5. **Metamask Setup**: Guide on configuring Metamask with Ganache and a public testnet.
-6. **Interacting with the Contract**: Use Web3.js to interact with the contract and check balances or perform actions like withdrawals.
+1. **Smart Contract**:  
+   The `SmartContract.sol` file allows the contract to accept Ether, check its balance, and let the owner withdraw Ether.
 
-Let me know if you need any additional details!
+2. **Environment Setup**:  
+   Install Web3.js, Truffle, and configure your development environment.
 
-### Solidity Code (SmartContract.sol)
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+3. **Web3.js Configuration**:  
+   Set up Web3.js to interact with the **Holeski Testnet** for deploying and interacting with the smart contract.
 
-contract SmartContract {
-    address public owner;
+4. **Truffle Setup**:  
+   Configure Truffle to compile, deploy, and test your smart contract. 
 
-    constructor() {
-        owner = msg.sender;  // Set the owner of the contract
-    }
+5. **MetaMask Setup**:  
+   Guide on configuring MetaMask with the Holeski Testnet to interact with your contract.
 
-    // Function to receive Ether
-    receive() external payable {}
+6. **Interacting with the Contract**:  
+   Use Web3.js to check balances, perform transactions, and interact with the contract functions such as withdrawing funds.
 
-    // Function for the owner to withdraw all Ether from the contract
-    function withdraw() external {
-        require(msg.sender == owner, "You are not the owner!");
-        payable(owner).transfer(address(this).balance);
-    }
+---
 
-    // Function to check the contract's balance
-    function checkBalance() external view returns (uint256) {
-        return address(this).balance;
-    }
-}
+## **Environment Setup**
+
+1. **Install Dependencies**:  
+   Install Node.js and required libraries:
+   ```bash
+   npm install web3 truffle
+
+2. **Configure Holeski:**
+Add the Holeski Testnet to MetaMask:
+
+Network Name: Holeski Testnet
+RPC URL: Replace with your provider's Holeski RPC endpoint (e.g., Infura or Alchemy).
+Chain ID: 17000
+Currency Symbol: ETH
+
+3. **Get Test Ether:**
+Use a Holeski faucet to get test Ether for deploying and interacting with the contract.
+
+## License
+
+This README is now tailored for Holeski, providing clear instructions for setting up, deploying, and interacting with the smart contract. Let me know if there’s anything else you’d like to add!
