@@ -67,11 +67,16 @@ Currency Symbol: ETH
 
 1. Compile the Contract:
    Run the following command to compile the smart contract using Truffle:
-   **truffle compile**
+   
+   ```bash
+   truffle compile
+   ```
 
 2. Deploy the Contract:
    Deploy the contract to the Holeski Testnet by running:
-   **truffle migrate --network holeski**
+   ```bash
+   truffle migrate --network holeski
+    ```
 
 ## **Interacting with the Contract**
 Use Web3.js to interact with the deployed smart contract.
